@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import ChangeGreeting from "./state/components/ChangeGreeting";
+import DisplayGreeting from "./state/components/DisplayGreeting";
 
 const App = () => {
-  const [greeting] = useState("Hello Mars");
-  return <div>{greeting}</div>;
+  return (
+    <>
+      <DisplayGreeting />
+      <ChangeGreeting />
+    </>
+  );
 };
 
 export default App;
